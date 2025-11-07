@@ -52,6 +52,27 @@ export function getAllLabsSummary(): LabSummary[] {
       description: 'Install Kubernetes locally (minikube), deploy your containerized Flask service, and learn how to scale it up and down with simple commands.',
       level: 'Advanced',
       technology: 'Kubernetes'
+    },
+    {
+      id: 'lab7',
+      title: 'Lab 7: Cloud Deployment with AWS',
+      description: 'Deploy your complete AI application stack to production: Next.js to Vercel and Flask MLOps service to AWS EC2 with Docker.',
+      level: 'Advanced',
+      technology: 'AWS EC2 + Vercel'
+    },
+    {
+      id: 'lab8',
+      title: 'Lab 8: Serverless Deployment with AWS Lambda',
+      description: 'Convert your Flask MLOps service to serverless architecture using AWS Lambda and API Gateway for cost-effective, auto-scaling deployment.',
+      level: 'Advanced',
+      technology: 'AWS Lambda + API Gateway'
+    },
+    {
+      id: 'lab9',
+      title: 'Lab 9: Monitoring & Logging for Production AI Systems',
+      description: 'Learn production monitoring concepts, explore AWS CloudWatch for deployed Lambda functions, and enhance your Prometheus dashboard with detailed health checks and metrics.',
+      level: 'Advanced',
+      technology: 'CloudWatch + Prometheus'
     }
   ];
 }
