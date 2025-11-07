@@ -39,7 +39,11 @@ logger = logging.getLogger(__name__)
 
 # Initialize Flask app
 app = Flask(__name__)
-CORS(app)  # Enable CORS for Next.js integration
+CORS(apporigins=[
+    "http://localhost:3000",           # Local development
+    "https://ai-solutions-lab-jade.vercel.app/",     # Production Vercel
+    "https://*.vercel.app"             # Vercel preview deployments
+])  # Enable CORS for Next.js integration
 
 # Track service start time for uptime calculation
 SERVICE_START_TIME = time.time()
